@@ -1,5 +1,5 @@
 from tkinter import *
-import backend
+import Backend
 
 def view_command():
     lb1.delete(0, END)
