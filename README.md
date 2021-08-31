@@ -1,4 +1,4 @@
-# BookInventory
+# Book Inventory
 This application is designed to manage the inventory of books in the Library or Bookstore.
 
 1. The "Backend.py" file contains the code for all the backends of this program. It uses "sqlite3" as a database to store data.
