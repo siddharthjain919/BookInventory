@@ -9,7 +9,6 @@ def connect():
 
 
 def insert(title, author, year, isbn):
-
     conn=sqlite3.connect("books.db")
     cur=conn.cursor()
     cur.execute("INSERT INTO book VALUES (NULL,?,?,?,?)", (title, author, year, isbn))
@@ -17,7 +16,6 @@ def insert(title, author, year, isbn):
     conn.close()
 
 def show():
-
     conn=sqlite3.connect("books.db")
     cur=conn.cursor()
     cur.execute("SELECT * FROM book")
@@ -27,7 +25,6 @@ def show():
 
 
 def search(title="", author="", year="", isbn=""):
-
     conn=sqlite3.connect("books.db")
     cur=conn.cursor()
     cur.execute("SELECT * FROM book WHERE title=? OR author=? OR year=? OR isbn=?", (title, author, year, isbn))
